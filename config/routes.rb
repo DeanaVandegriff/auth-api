@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  ### USER ROUTES ###
+  post "/users" => "users#create"
+
+  ### SESSION ROUTES ###
+  post "/sessions" => "sessions#create"
 end

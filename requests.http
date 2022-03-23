@@ -1,0 +1,24 @@
+#  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxMzQ1Njl9.RF4shbLaryIzPrXxzr2_T6yIisIRQmi9qiDIFxdvJA0"
+
+
+
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Bruce Wayne",
+  "email": "batman@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "batman@example.com",
+  "password": "password"
+}
