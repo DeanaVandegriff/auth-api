@@ -1,4 +1,4 @@
-#  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxMzQ1Njl9.RF4shbLaryIzPrXxzr2_T6yIisIRQmi9qiDIFxdvJA0"
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNzA0MTh9.Y8315_ry9ict5glxUvWRCxqH6ylDPapTFLBL1jmWYpU
 
 
 
@@ -14,7 +14,13 @@ Content-Type: application/json
   "password_confirmation": "password"
 }
 
+### Users show
+
+GET http://localhost:3000/users/1.json
+Authorization: Bearer {{jwt}}
+
 ### Sessions create (login)
+
 POST http://localhost:3000/sessions.json
 Content-Type: application/json
 

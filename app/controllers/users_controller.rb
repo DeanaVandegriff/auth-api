@@ -12,4 +12,9 @@ class UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
+
+  def show
+    :authenticate_user
+    render json: current_user()
+  end
 end
